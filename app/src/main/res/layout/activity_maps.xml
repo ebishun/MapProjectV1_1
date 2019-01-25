@@ -1,0 +1,158 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.promosys.mapprojectv1_1.MapsActivity"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_total_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/txt_total_travelled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:textSize="18sp"
+            android:text="Total distance travelled: "/>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_start_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate Route"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/layout_description"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/layout_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        map:cardBackgroundColor="#ffffff">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txt_location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location Name"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_alignStart="@+id/txt_location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_distance_from_marker"
+                android:layout_below="@+id/txt_location_address"
+                android:text="0 KM"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:layout_alignStart="@+id/txt_location_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_location_address"
+                android:layout_below="@+id/txt_location_name"
+                android:text="Address"
+                android:textStyle="italic"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/btn_set_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SET AS MARKER"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/txt_distance_from_marker"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/btn_reset_calculation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESET"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txt_distance_from_marker"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/show_distance_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textColorHighlight="@android:color/primary_text_dark"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/btnDriving"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Driving Mode" />
+
+            <Button
+                android:id="@+id/btnWalk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Walking Mode" />
+        </LinearLayout>
+
+    </LinearLayout>
+    -->
+
+</RelativeLayout>
+
+
+

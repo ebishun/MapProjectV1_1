@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_groupname_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Group Name: "
+        android:layout_marginStart="10dp"
+
+        android:layout_alignTop="@+id/edt_add_group"
+        android:layout_alignBottom="@+id/edt_add_group"
+        android:gravity="center_vertical"/>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toEndOf="@+id/txt_groupname_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_add_group"
+        android:hint="Add Group"/>
+
+    <Button
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/edt_add_group"
+        android:id="@+id/btn_add_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Group"/>
+
+    <Button
+        android:layout_toStartOf="@+id/btn_add_group"
+        android:layout_alignTop="@+id/btn_add_group"
+        android:id="@+id/btn_cancel_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"/>
+
+    <Button
+        android:layout_marginStart="5dp"
+        android:layout_alignTop="@+id/btn_add_group"
+        android:layout_alignParentStart="true"
+        android:id="@+id/btn_delete_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"/>
+
+</RelativeLayout>

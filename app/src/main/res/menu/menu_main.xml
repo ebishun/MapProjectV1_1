@@ -1,0 +1,52 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.nabilla.myapplication.MainActivity">
+
+    <item
+        android:id="@+id/menu_add_group"
+        android:orderInCategory="100"
+        android:title="Add Group"
+        android:icon="@mipmap/ic_add_box_white_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_add_location"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_add_location_white_24dp"
+        android:title="Add Location"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_backup_data"
+        android:orderInCategory="100"
+        android:title="Save Backup Data"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_load_backup_data"
+        android:orderInCategory="100"
+        android:title="Load Backup Data"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_map_activity"
+        android:orderInCategory="100"
+        android:title="Plan My Trip"
+        app:showAsAction="never"/>
+
+    <!--
+    <item
+        android:id="@+id/menu_open_location"
+        android:orderInCategory="100"
+        android:title="Open File Location"
+        app:showAsAction="never"/>
+
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search for asset name"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always"/>
+    -->
+</menu>
